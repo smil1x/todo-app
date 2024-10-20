@@ -1,0 +1,25 @@
+@use '../../../styles/variables' as *;
+
+.wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.radio{
+  cursor: pointer;
+  transform:scale(2);
+  margin: 8px;
+}
+
+@media (max-width: $sm-screen) {
+  .wrapper {
+    display: block;
+  }
+}

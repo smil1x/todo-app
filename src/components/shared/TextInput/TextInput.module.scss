@@ -1,0 +1,16 @@
+@use "../../../styles/variables" as *;
+
+.wrapper {
+  width: 100%;
+  min-width: 120px;
+  margin: 10px;
+  border-radius: $border-radius;
+  border: 2px solid $color-light-gray;
+  padding: 9px;
+  box-sizing: border-box;
+
+  &:focus-visible{
+    border: 2px solid $color-gray;
+    outline: none;
+  }
+}

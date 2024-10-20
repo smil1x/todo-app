@@ -1,0 +1,40 @@
+@use '../../styles/variables' as *;
+
+.completed{
+  text-decoration: line-through;
+}
+.taskList {
+  order: 1;
+  flex: 1;
+  border-right: 2px $border-color solid;
+}
+
+.task{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 10px;
+}
+
+.taskName{
+  display: flex;
+  flex: 1;
+  word-break: break-all;
+  text-align: left;
+  margin-right: 10px;
+
+}
+.checkbox {
+  cursor: pointer;
+  transform:scale(2);
+  margin-right: 10px;
+}
+
+@media (max-width: $md-screen) {
+  .taskList {
+    order: 2;
+    border-right: none;
+    border-top: 2px $border-color solid;
+    height: 100%;
+  }
+}

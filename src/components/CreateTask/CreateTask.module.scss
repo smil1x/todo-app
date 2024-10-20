@@ -1,0 +1,33 @@
+@use '../../styles/variables' as *;
+
+.container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.plusIcon{
+  margin-right: 5px;
+}
+
+.wrapper {
+  @extend .container;
+  border-bottom: 1px solid $border-color;
+  padding: 10px 20px;
+  .addButton {
+    margin-right: 0px;
+  }
+}
+
+.label {
+  color: $text-light-color;
+  margin-right: 80px;
+  padding: 0;
+}
+
+@media (max-width: $lg-screen) {
+  .label{
+    margin-right: 10px
+  }
+}
+

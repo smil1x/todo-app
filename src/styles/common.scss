@@ -1,0 +1,24 @@
+@use "variables" as *;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: $font-family;
+  letter-spacing: 0.01em;
+  font-size: $font-lg;
+  color: $text-color;
+  margin: 0;
+}
+input, select, button {
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+}
+
+@media (max-width: 480px) {
+  body{
+    font-size: $font-base;
+  }
+}

@@ -1,0 +1,64 @@
+@use '../../styles/variables' as *;
+
+.options {
+  padding: 0 20px;
+  flex: 1;
+  order: 2;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 20px 0;
+  max-width: 500px;
+}
+
+.optionName {
+  color: $text-light-color;
+  flex-basis: 100px;
+  margin-right: 10px;
+}
+
+@media (max-width: $lg-screen) {
+  .options {
+    padding: 0 10px
+  }
+  .option {
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 100%;
+    margin: 10px 0;
+  }
+  .optionName {
+    margin-right: 0;
+    margin-bottom: 10px;
+    flex-basis: auto;
+  }
+}
+
+@media (max-width: $md-screen) {
+  .options {
+    order: 1;
+    max-width: 500px;
+    flex: unset;
+  }
+  .option{
+    flex-direction: row;
+  }
+  .optionName {
+    flex-basis: 100px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: $sm-screen) {
+  .options {
+    padding: 0;
+  }
+  .option {
+    margin: 5px 0;
+    min-width: 100%;
+    padding: 0 10px;
+  }
+}
+

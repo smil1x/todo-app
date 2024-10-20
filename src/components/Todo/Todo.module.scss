@@ -1,0 +1,20 @@
+@use '../../styles/variables' as *;
+
+.contentLabel {
+  padding: 10px 20px;
+  font-size: $font-xlg;
+}
+
+.taskContainer {
+  display: flex;
+  border: 2px solid $border-color;
+  border-radius: 5px;
+  margin: 10px 20px;
+  min-height: 450px;
+}
+
+@media (max-width: $md-screen) {
+  .taskContainer {
+    flex-direction: column;
+  }
+}
